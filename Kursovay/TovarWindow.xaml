@@ -1,0 +1,55 @@
+﻿<Window x:Class="Kursovay.TovarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursovay"
+        mc:Ignorable="d"
+        Title="TovarWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Введите название товара" />
+            <TextBox Name="NameTovar" Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label Content="Введите тип" />
+            <TextBox Name="typeTovar" Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Label Content="Введите сорт" />
+            <TextBox Name="sortTovar" Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <Label Content="Введите цену" />
+            <TextBox Name="priceTovar" Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1">
+            <Label Content="Введите остаток" />
+            <TextBox Name="ostatokTovar" Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="1">
+            <Label Content="Введите город" />
+            <TextBox Name="towmTovar" Height="25" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="7" Grid.Column="1" Orientation="Horizontal">
+            <Button Content="Сохранить" Width="100" Margin="10 5" Click="Button_Click" />
+            <Button Content="Отмена" Width="100" Margin="10 5" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>
